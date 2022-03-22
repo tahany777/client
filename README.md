@@ -86,3 +86,7 @@ export const Something = 44
     // B.js
     import A, { myA, Something } from './A'
 ```
+
+## Material Ui Icons:
+
+npm install @mui/icons-material
