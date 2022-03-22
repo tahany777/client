@@ -89,4 +89,4 @@ export const Something = 44
 
 ## Material Ui Icons:
 
-npm install @mui/icons-material
+``npm install @material-ui/icons``
