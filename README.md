@@ -26,11 +26,12 @@ onChange={(e) => setPostData({ ...postData, creator: e.target.value })}
 className={`${classes.root} ${classes.form}`}
 ```
 
-### Named and Default import: 
+### Named and Default import
 
 * **I just saw this discussion on default and named imports and exports when you are using ES6 modules**
 
 #### 1- **This is a default import:**
+
 * `In this case it doesn’t matter what name you assign to it when importing`
 
 ```javascript
@@ -46,17 +47,19 @@ className={`${classes.root} ${classes.form}`}
 ```
 
 * It only works if A contains a default export
+
 ```javascript
+
 // A.js
     export default 42
 ```
-
 
 #### **2- This is a named import called A:**
 
 ```javascript
     import { A } from './A'
 ```
+
 * It only works if A contains a named export called A:
 
 ```javascript
@@ -71,6 +74,7 @@ className={`${classes.root} ${classes.form}`}
     import { myA } from './A' // Doesn't work!
     import { Something } from './A' // Doesn't work!
 ```
+
 * `To make these work, you would add a corresponding named export to A:`
 
 ```javascript
@@ -86,3 +90,7 @@ className={`${classes.root} ${classes.form}`}
     // B.js
     import A, { myA, Something } from './A'
 ```
+
+## Material Ui Icons
+
+``npm install @material-ui/icons``
