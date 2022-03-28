@@ -66,18 +66,18 @@ className={`${classes.root} ${classes.form}`}
 * `In this case the name matters because you’re importing a specific thing by its export name`
 
 ```javascript
-// B.js
-import { A } from './A'
-import { myA } from './A' // Doesn't work!
-import { Something } from './A' // Doesn't work!
+    // B.js
+    import { A } from './A'
+    import { myA } from './A' // Doesn't work!
+    import { Something } from './A' // Doesn't work!
 ```
 * `To make these work, you would add a corresponding named export to A:`
 
 ```javascript
-// A.js
-export const A = 42
-export const myA = 43
-export const Something = 44
+    // A.js
+    export const A = 42
+    export const myA = 43
+    export const Something = 44
 ```
 
 > A module can only have one default export, but as many named exports as you like (zero, one, or many). You can import them together.
