@@ -12,7 +12,7 @@
 // styles
 
 * npm install @material-ui/core
-* npm install axios react-redux redux-thunk moment
+* npm install axios react-redux redux-thunk moment react-router-dom
 * npm i react-file-base64
 
 
@@ -103,4 +103,19 @@ export const Something = 44
 
 ```bash
 npm install jwt-decode react-google-login
+```
+
+### Structure for react router dom
+
+```javascript
+
+    <BrowserRouter>
+        <Container maxWidth="lg">
+            <Navbar />
+            <Routes>
+                <Route path="/" exact element={<Home />}/>
+                <Route path="/auth" exact element={<Auth />}/>
+            </Routes>
+        </Container>
+    </BrowserRouter>
 ```
