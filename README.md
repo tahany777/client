@@ -12,7 +12,7 @@
 // styles
 
 * npm install @material-ui/core
-* npm install axios react-redux redux-thunk moment
+* npm install axios react-redux redux-thunk moment react-router-dom
 * npm i react-file-base64
 
 
