@@ -94,3 +94,13 @@ export const Something = 44
 ## Material Ui Icons
 
 ``npm install @material-ui/icons``
+
+## Zeet
+
+* to deploy your App
+
+## Login With Google (JWT)
+
+```bash
+npm install jwt-decode react-google-login
+```
