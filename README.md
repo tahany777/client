@@ -119,3 +119,10 @@ npm install jwt-decode react-google-login
         </Container>
     </BrowserRouter>
 ```
+
+### Fix Styles Errors
+
+```javaScript
+    npm install @emotion/react 
+    npm install @emotion/styled
+```
