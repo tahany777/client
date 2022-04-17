@@ -13,7 +13,7 @@
 
 * npm install @material-ui/core
 * npm install axios react-redux redux-thunk moment react-router-dom
-* npm i react-file-base64
+* npm i react-file-base64 react-google-login
 
 
 //Add url in package.json file under private
@@ -126,3 +126,19 @@ npm install jwt-decode react-google-login
     npm install @emotion/react 
     npm install @emotion/styled
 ```
+
+### Google Sign In Id
+
+[Client-Id](https://console.cloud.google.com/apis/)
+
+* OAuth consent screen
+* Enter your project details and your Email then continue
+* Save and continue
+* Save and continue
+* Back to the dashboard
+* CREATE CREDENTIALS => OAuth client ID => Application Type(web application)
+* Add URL => https://localhost:3000
+* Authorized redirect URIs =>  http://localhost:3000
+* Authorized redirect URIs =>  http://localhost:3000/auth
+* Create
+* copy your client id and client secret
