@@ -137,8 +137,16 @@ npm install jwt-decode react-google-login
 * Save and continue
 * Back to the dashboard
 * CREATE CREDENTIALS => OAuth client ID => Application Type(web application)
-* Add URL => https://localhost:3000
+* Add URL => http://localhost:3000 => https://localhost:3000
 * Authorized redirect URIs =>  http://localhost:3000
 * Authorized redirect URIs =>  http://localhost:3000/auth
 * Create
 * copy your client id and client secret
+
+## clean the cookies that cause error with google sign in
+
+> clear browser cache
+=> Chrome settings => Click More tools Clear browsing data => clear browsing data
+
+
+### ?. operator => don't throw error if didn't found
