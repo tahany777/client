@@ -12,8 +12,8 @@
 // styles
 
 * npm install @material-ui/core
-* npm install axios react-redux redux-thunk moment
-* npm i react-file-base64
+* npm install axios react-redux redux-thunk moment react-router-dom
+* npm i react-file-base64 react-google-login
 
 
 //Add url in package.json file under private
@@ -94,3 +94,59 @@ className={`${classes.root} ${classes.form}`}
 ## Material Ui Icons
 
 ``npm install @material-ui/icons``
+
+## Zeet
+
+* to deploy your App
+
+## Login With Google (JWT)
+
+```bash
+npm install jwt-decode react-google-login
+```
+
+### Structure for react router dom
+
+```javascript
+
+    <BrowserRouter>
+        <Container maxWidth="lg">
+            <Navbar />
+            <Routes>
+                <Route path="/" exact element={<Home />}/>
+                <Route path="/auth" exact element={<Auth />}/>
+            </Routes>
+        </Container>
+    </BrowserRouter>
+```
+
+### Fix Styles Errors
+
+```javaScript
+    npm install @emotion/react 
+    npm install @emotion/styled
+```
+
+### Google Sign In Id
+
+[Client-Id](https://console.cloud.google.com/apis/)
+
+* OAuth consent screen
+* Enter your project details and your Email then continue
+* Save and continue
+* Save and continue
+* Back to the dashboard
+* CREATE CREDENTIALS => OAuth client ID => Application Type(web application)
+* Add URL => http://localhost:3000 => https://localhost:3000
+* Authorized redirect URIs =>  http://localhost:3000
+* Authorized redirect URIs =>  http://localhost:3000/auth
+* Create
+* copy your client id and client secret
+
+## clean the cookies that cause error with google sign in
+
+> clear browser cache
+=> Chrome settings => Click More tools Clear browsing data => clear browsing data
+
+
+### ?. operator => don't throw error if didn't found
